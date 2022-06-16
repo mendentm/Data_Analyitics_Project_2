@@ -1,0 +1,7 @@
+import pandas as pd
+df = pd.read_csv(r"C:\Users\mende\Documents\Data Analytics\assignment_seven.csv")
+
+df.dropna()
+df2 = df.drop('full_name', axis=1, inplace=True)
+
+df2.to_csv('Data_Analitics_Project_2.csv')
